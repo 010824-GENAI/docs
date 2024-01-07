@@ -18,7 +18,7 @@
 Our end goal is to develop Retrieval Augmented Generation (RAG) applications with text generation AI models and external data sources. The topics we'll cover include:
 
 - Introduction to Natural Language Processing (NLP) with Python
-- Introduction to Language Model (LLM), prompt engineering
+- Introduction to Large Language Model (LLM), prompt engineering
 - Vector embeddings, vector database
 - LangChain
 
