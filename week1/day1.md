@@ -252,4 +252,3 @@ greeting = "Hello, World!"
 ## Resources
 
 - Python Documentation: [Official Python Docs](https://docs.python.org/3/)
-- Large Language Models: [LLMS Practical Guide](https://github.com/Mooler0410/LLMsPracticalGuide)
