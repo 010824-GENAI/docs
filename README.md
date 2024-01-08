@@ -1,4 +1,4 @@
-# GENAI - 1825: Trainer Overview
+# GENAI - 1825: Training Overview
 
 ## Table of Contents
 
