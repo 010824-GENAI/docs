@@ -3,8 +3,7 @@
 ## Agenda
 
 1. **Introduction to Python:** Understanding the basics of Python programming language.
-2. **Python for Large Language Models:** Exploring the application of Python in Large Language Models.
-3. **Hands-on Session:** Practical exercises to apply the concepts learned.
+2. **Hands-on Session:** Practical exercises to apply the concepts learned.
 
 ## Learning Objectives
 
@@ -12,8 +11,6 @@ By the end of this session, you should be able to:
 
 - Understand and apply the basic syntax rules of Python programming.
 - Understand and utilize Python's essential data structures such as Strings, Lists, and Dictionaries.
-- Understand and implement advanced Python features like List Comprehensions, Generators, and Lambda functions.
-- Understand the role of Python in Large Language Models and be able to apply Python programming to solve problems in this domain.
 
 ---
 
