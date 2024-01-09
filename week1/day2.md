@@ -2,7 +2,7 @@
 
 ## Agenda
 1. **Curricula Overview**: What this training is about and what this isn't about 
-2. **Introduction to NLP:** Understanding the basics of Python programming language.
+2. **Introduction to NLP:** Understanding the basics of NLP.
 3. **Introduction to Regular Expressions:** Learn about the basics of regular expressions, their syntax, and how to use them in Python for pattern matching in text.
 4. **Hands-on Session:** Practical exercises to apply the concepts learned.
 
