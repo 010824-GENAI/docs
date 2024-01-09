@@ -167,3 +167,21 @@ print(lemmatized_words)
 
 # Output: ['Can', 'you', 'really', 'have', 'too', 'many', 'pen', '?', 'They', 'all', 'serve', 'different', 'purpose', 'and', 'one', 'simply', 'can', 'not', 'have', 'too', 'many', '!']
 ```
+
+---
+
+## Part of Speech (POS) Tagging
+
+### Overview
+
+POS Tagging plays a pivotal role in natural language processing (NLP), identifying the grammatical role of each word in a sentence, such as nouns, verbs, adjectives, etc.
+
+### Importance of POS Tagging
+
+- **Context Understanding**: Helps models comprehend the context of words in a sentence, going beyond just recognizing the words and their frequency.
+- **Applications in NLP**: Widely used in various NLP tasks like sentiment analysis, syntax analysis, speech recognition, and grammar style checking.
+- **Foundation for Advanced NLP**: Serves as a key step before progressing to more complex tasks such as Named Entity Recognition (NER).
+
+#### Key Note
+
+- POS tagging is essentially a precursor to advanced NLP techniques like NER, setting the groundwork for deeper text analysis and processing.
