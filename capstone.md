@@ -22,4 +22,5 @@ The project will utilize the following technologies:
 - Streamlit
 
 ## Architecture Diagram
-![diagram](cpstn_diagram.png)
+
+![diagram](./resources/cpstn_diagram.png)
