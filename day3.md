@@ -62,6 +62,7 @@ for index, word in enumerate(w2v.index_to_key):
 # Retrieve the vector representation of a word
 
 vec_computer = w2v['computer']
+
 print("Vector for 'computer':\n", vec_computer)
 ```
 
@@ -94,6 +95,7 @@ print(f"Similarity between '{w1}' and '{w2}': {similarity:.2f}")
 # Find words most similar to a given set
 
 similar_words = w2v.most_similar(positive=['cup', 'mug'], topn=5)
+
 print("Words most similar to ['cup', 'mug']:", similar_words)
 ```
 
@@ -103,5 +105,65 @@ print("Words most similar to ['cup', 'mug']:", similar_words)
 # Identify the least similar word in a set
 
 odd_one_out = w2v.doesnt_match(['cup', 'cat', 'mug', 'jar'])
+
 print("The odd one out:", odd_one_out)
+```
+
+---
+
+## Advanced Tokenization Techniques
+
+### Overview
+
+Tokenization techniques such as stemming and lemmatizing are essential in natural language processing. They simplify text analysis and improve data handling efficiency.
+
+### Stemming
+
+- **Definition**: Reduces words to their root form, for instance, "learning" and "learner" to "learn".
+- **Advantages**: Fast, focusing on core word meanings, beneficial where processing speed is critical.
+- **Limitations**: Less precise than lemmatizing, can lead to understemming (e.g., "decided" becomes "decid") or overstemming (e.g., "university" and "universe" both become "univers").
+
+#### Example: Using NLTK's Snowball Stemmer
+
+```python
+from nltk.stem.snowball import EnglishStemmer
+from nltk.tokenize import word_tokenize
+
+text = "The artist decided to create a new painting. Creating art is a form of self-expression. She hoped to create an atmosphere of creativity in her studio where she could freely create. The act of creation brought her joy, and she believed that anyone could create something beautiful with a bit of inspiration."
+
+words = word_tokenize(text)
+print(words)
+
+# Output: ['The', 'artist', 'decided', 'to', 'create', 'a', 'new', 'painting', '.', 'Creating', 'art', 'is', 'a', 'form', 'of', 'self-expression', '.', 'She', 'hoped', 'to', 'create', 'an', 'atmosphere', 'of', 'creativity', 'in', 'her', 'studio', 'where', 'she', 'could', 'freely', 'create', '.', 'The', 'act', 'of', 'creation', 'brought', 'her', 'joy', ',', 'and', 'she', 'believed', 'that', 'anyone', 'could', 'create', 'something', 'beautiful', 'with', 'a', 'bit', 'of', 'inspiration']
+
+stemmer = EnglishStemmer()
+stemmed_words = [stemmer.stem(word) for word in words]
+print(stemmed_words)
+
+# Output: ['the', 'artist', 'decid', 'to', 'creat', 'a', 'new', 'paint', '.', 'creat', 'art', 'is', 'a', 'form', 'of', 'self-express', '.', 'she', 'hope', 'to', 'creat', 'an', 'atmospher', 'of', 'creativ', 'in', 'her', 'studio', 'where', 'she', 'could', 'freeli', 'creat', '.', 'the', 'act', 'of', 'creation', 'brought', 'her', 'joy', ',', 'and', 'she', 'believ', 'that', 'anyon', 'could', 'creat', 'someth', 'beauti', 'with', 'a', 'bit', 'of', 'inspir']
+```
+
+### Lemmatizing
+
+- **Definition**: Finds the basic form of a word, more consistent than stemming.
+- **Advantages**: Improves text analysis accuracy, reduces data size by limiting word variations.
+- **Limitations**: Slower than stemming, may be ambiguous as it doesn't always consider word context.
+
+#### Example: Using NLTK's WordNet Lemmatizer
+
+```python
+from nltk.stem import WordNetLemmatizer
+from nltk.tokenize import word_tokenize
+
+lemmatizer = WordNetLemmatizer()
+string_for_lemmatizing = "Can you really have too many pens? They all serve different purposes and one simply cannot have too many!"
+words = word_tokenize(string_for_lemmatizing)
+print(words)
+
+# Output: ['Can', 'you', 'really', 'have', 'too', 'many', 'pens', '?', 'They', 'all', 'serve', 'different', 'purposes', 'and', 'one', 'simply', 'can', 'not', 'have', 'too', 'many', '!']
+
+lemmatized_words = [lemmatizer.lemmatize(word) for word in words]
+print(lemmatized_words)
+
+# Output: ['Can', 'you', 'really', 'have', 'too', 'many', 'pen', '?', 'They', 'all', 'serve', 'different', 'purpose', 'and', 'one', 'simply', 'can', 'not', 'have', 'too', 'many', '!']
 ```
