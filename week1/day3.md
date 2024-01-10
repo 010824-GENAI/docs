@@ -2,16 +2,23 @@
 
 ## Agenda
 
-1. **Introduction to NLP:** Understanding the basics of Python programming language.
-2. **Introduction to Regular Expressions:** Learn about the basics of regular expressions, their syntax, and how to use them in Python for pattern matching in text.
-3. **Hands-on Session:** Practical exercises to apply the concepts learned.
+1. **Word2Vec:** Understanding the basics of Word2Vec for word embeddings.
+2. **GloVe:** Learn about the Global Vectors for Word Representation (GloVe) model for word embeddings.
+3. **Advanced Tokenization:** Deep dive into advanced techniques for tokenizing text data.
+4. **POS Tagging:** Learn about Part-of-Speech (POS) tagging and its applications in NLP.
+5. **Named Entity Recognition:** Understand the concept of Named Entity Recognition (NER) and how it's used in NLP.
+6. **Text Similarity:** Explore different methods for calculating text similarity.
+7. **Hands-on Session:** Practical exercises to apply the concepts learned.
 
 ## Learning Objectives
 
 By the end of this session, you should be able to:
 
-- Understand the basics of Natural Language Processing.
-- Understand the concept of regular expressions and how to use them for pattern matching in Python.
+- Understand the basics of Word2Vec and GloVe for word embeddings.
+- Understand advanced tokenization techniques.
+- Understand the concept of POS tagging and Named Entity Recognition (NER).
+- Understand different methods for calculating text similarity.
+- Apply the learned concepts in practical exercises.
 
 ---
 
