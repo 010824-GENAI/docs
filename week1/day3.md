@@ -235,3 +235,66 @@ tree.draw()
 ```
 
 The function successfully identifies 'John Doe', 'ACME Corporation', 'New York City', 'Tech Innovations', 'Google', and 'Microsoft' as named entities.
+
+---
+
+## Text Similarity
+
+### Introduction
+
+Text similarity measures the likeness between two text pieces. It's important for search engines, recommending content, analyzing feelings, summarizing texts, and finding copied material.
+
+### Cosine Similarity
+
+- **What It Does**: Looks at the angle between two text vectors (word frequency lists).
+- **How It's Used**: Good for comparing texts with lots of zeros in their word lists. However, it might miss the context or order of words.
+
+### Euclidean Distance
+
+- **What It Does**: Calculates the actual distance between two points (text vectors) in space.
+- **NLP Use**: Helps figure out how different two document or sentence vectors are.
+
+### Jaccard Similarity
+
+- **What It Does**: Checks how much two sets overlap (like word sets in texts) by dividing their common words by their total words.
+- **NLP Use**: Useful for grouping similar documents or finding duplicates. It cares about whether words are there, not how often they appear.
+
+The following demonstrates calculating cosine similarity between two texts using sklearn
+
+```python
+from sklearn.feature_extraction.text import CountVectorizer
+from sklearn.metrics.pairwise import cosine_similarity
+
+# Sample texts
+text1 = "Natural language processing is fascinating."
+text2 = "I'm intrigued by the wonders of natural language processing."
+
+# Tokenize and vectorize the texts
+vectorizer = CountVectorizer().fit_transform([text1, text2])
+
+# Calculate cosine similarity
+cosine_sim = cosine_similarity(vectorizer)
+
+# Print the cosine similarity matrix
+print(f"Cosine Similarity: {cosine_sim}")
+```
+
+The following is an sample implementation of Jaccard Similarity:
+
+```python
+# Function to calculate Jaccard similarity between two sets
+def jaccard_similarity(set1, set2):
+    intersection = len(set1.intersection(set2))
+    union = len(set1.union(set2))
+    return intersection / union if union != 0 else 0
+
+# Sample sets of words
+set1 = {"natural", "language", "processing", "fascinating"}
+set2 = {"intrigued", "by", "the", "wonders", "of", "natural", "language", "processing"}
+
+# Calculate Jaccard similarity
+jaccard_sim = jaccard_similarity(set1, set2)
+
+# Print the Jaccard similarity
+print(f"Jaccard Similarity: {jaccard_sim}")
+```
