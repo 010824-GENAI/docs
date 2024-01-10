@@ -185,3 +185,27 @@ POS Tagging plays a pivotal role in natural language processing (NLP), identifyi
 #### Key Note
 
 - POS tagging is essentially a precursor to advanced NLP techniques like NER, setting the groundwork for deeper text analysis and processing.
+
+---
+
+## Named Entity Recognition (NER)
+
+### What is NER?
+
+NER is the process of identifying and extracting named entities from text. These entities typically include nouns such as people's names, organizations, locations, dates, etc.
+
+#### Example
+
+In the sentence "Bill Gates and Paul Allen founded Microsoft", "Bill Gates" and "Paul Allen" are entities of type 'person', while "Microsoft" is an entity of type 'organization'.
+
+### Applications of NER
+
+- **Classifying Content**: Assists in scanning documents and categorizing them based on identified named entities.
+- **Content Recommendation**: Enables suggestions for similar content with related entities.
+- **PII Detection and Removal**: Useful in detecting and removing Personally Identifiable Information (PII) like names, phone numbers, or addresses from texts.
+
+### Commonly Used Types of Named Entities
+
+Refer to the NER diagram for a visual representation of different entity types.
+
+![NER Diagram](../resources/ner-diagram.png)
