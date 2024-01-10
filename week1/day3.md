@@ -209,3 +209,29 @@ In the sentence "Bill Gates and Paul Allen founded Microsoft", "Bill Gates" and 
 Refer to the NER diagram for a visual representation of different entity types.
 
 ![NER Diagram](../resources/ner-diagram.png)
+
+### NER Example
+
+NLTK offers a convenient ne_chunk function to detect Named Entities. Following is a code snippet that will walk you through the process of extracting NE and plotting the resulting tree.
+
+```python
+from nltk import ne_chunk
+from nltk.tag import pos_tag
+from nltk.tokenize import word_tokenize
+
+ner_text = """
+John Doe, a software engineer at ACME Corporation, recently attended a conference in New York City on January 15-17, 2023. The event, organized by Tech Innovations Inc., focused on artificial intelligence and machine learning. During the conference, John had the opportunity to network with professionals from Google, Microsoft, and other leading tech companies.
+"""
+
+tokens = word_tokenize(ner_text)
+print(tokens)
+
+pos_tagged = pos_tag(tokens)
+print(pos_tagged)
+
+tree = ne_chunk(pos_tagged)
+
+tree.draw()
+```
+
+The function successfully identifies 'John Doe', 'ACME Corporation', 'New York City', 'Tech Innovations', 'Google', and 'Microsoft' as named entities.
