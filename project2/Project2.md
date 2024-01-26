@@ -10,8 +10,9 @@ Same as before, on 1/31/24 at 3pm we will give an informal presentation of our p
 - The application should use text embedding model to retrieve appropriate documents for the user's question ("retrieval")
 - The application should use an LLM to generate a response to the user's question based on the provided context ("generation")
 
-## Stretch Goals
+## (Optional) Stretch Goals
 - Use different text file types (csv, markdown, pdf, etc)
 - Validation on LLM Response
 - Some interface of your choice (API, UI, etc.)
 - Make LLM to remember your chat history
+- Anything else you want to explore
