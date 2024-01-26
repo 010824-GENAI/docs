@@ -1,7 +1,7 @@
 # Project 2 (Due Thursday 2/1/24)
 
 For Project 2, we'll create a RAG application by extending your Project 1 with a vector database! You can continue working in your P1_your_name repository.
-Same as before, on 1/31/24 at 3pm we will give an informal presentation of our projects. Please keep the demo to less than 4 minutes to keep things flowing. 
+Same as before, on 2/1/24 at 3pm we will give an informal presentation of our projects. Please keep the demo to less than 4 minutes to keep things flowing. 
 
 ## Requirements
 - Application should use persisted ChromaDB
