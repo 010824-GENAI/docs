@@ -1,5 +1,5 @@
 **/db/**
-
+**/lc_chroma_db
 # Byte-compiled / optimized / DLL files
 __pycache__/
 *.py[cod]

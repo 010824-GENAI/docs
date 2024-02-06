@@ -1,6 +1,10 @@
-# GenAI Capstone Project
+# GenAI Capstone Project (Presentation 2/16/24)
 
-In this capstone project, you will be creating an AI Chatbot using Large Language Models (LLM) and Retrieval Augmented Generation (RAG). The project should be able to engage in conversations with users and answer questions about topics it did not encounter during its training by leveraging external data.
+In this capstone project, you will be creating an AI Chatbot using Large Language Models (LLM) and Retrieval Augmented Generation (RAG) architecture. The project should be able to engage in conversations with users and answer questions about topics it did not encounter during its training by leveraging external data.
+
+The project will be done in teams of 2 - 3 people. Please let me know of your availability next two weeks, so I can form teams by middle of this week.
+
+Project presentation is going to be on the last day of the training 2/16/24.
 
 ## Project Requirements
 
@@ -17,7 +21,7 @@ The project will utilize the following technologies:
 - Python
 - LLM
 - LangChain
-- Vector database and an embedding model
+- ChromaDB and an embedding model
 - Various data sources (documents, databases, etc.)
 - Streamlit
 
