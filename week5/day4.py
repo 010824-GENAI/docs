@@ -17,7 +17,7 @@ from langchain_community.tools import DuckDuckGoSearchRun
 retriever_tool = create_retriever_tool(
     retriever=retriever,
     name="search_human_computer_interaction_books",
-    description="use this tool to look up anything that has to do with human computer interaction topic"
+    description="use this tool to answer questions on human computer interaction topic"
 )
 
 tools = [retriever_tool, DuckDuckGoSearchRun()]
@@ -29,4 +29,4 @@ agent = create_json_chat_agent(chat_model, tools, prompt)
 
 agent_executor = AgentExecutor(agent=agent, tools=tools, verbose=True, handle_parsing_errors=True)
 
-# agent_executor.invoke({"input":"what determines cat's coat color?"})
+agent_executor.invoke({"input":"what determines cat's coat color?"})
