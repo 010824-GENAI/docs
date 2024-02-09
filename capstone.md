@@ -8,11 +8,11 @@ Project presentation is going to be on the last day of the training 2/16/24.
 
 ## Project Requirements
 
-- Users should interact with a LangChain Agent, an LLM equipped with tools.
-- Tools should retrieve data and provide additional context to the Agent to answer the user's questions (e.g., retrieve data from documents, the web, databases, etc.).
+- Users should interact with a LangChain Chain or Agent, an LLM equipped with tools.
+  - Tools should retrieve data and provide additional context to the Agent to answer the user's questions (e.g., retrieve data from documents, the web, databases, etc.).
+- The Chains or Agents should maintain a memory of the ongoing chat.
 - The project should utilize a vector database and an embedding model to enable semantic search.
-- The Agent should maintain a memory of the ongoing chat.
-- A chat UI should be provided by Streamlit.
+- Some sort of interface.
 
 ## Technologies
 
