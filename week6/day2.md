@@ -3,11 +3,12 @@
 ## Agenda
 - Reminders
   - Labs
-    - for support, directly ping Valentina Kamalish (She's already in our meeting chat)
+    - Test discovery or Env Var importing issues: Please restart the labs
+    - for additional support, directly ping Valentina Kamalish (She's already in our meeting chat)
   - Project
     - Presentation 2/16 3PM
-      - Same link
-  - Week 5 Survey, please and thank you
+      - Our regular meeting link
+  - [Week 5 Survey]( https://forms.office.com/r/WpzWUwSN9w), please and thank you
 - LangChain +a
 
 ## LangChain +a
